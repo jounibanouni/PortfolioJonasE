@@ -23,7 +23,6 @@ const query = graphql`
 
 const Jobs = () => {
   const data = useStaticQuery(query)
-  console.log(data)
   const {
     allStrapiJobs: { nodes: jobs },
   } = data
